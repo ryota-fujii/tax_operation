@@ -19,4 +19,4 @@ Route::get('/', function () {
 Route::group(['middleware' => ['web']], function() {
   Route::get('/', 'OperationController@index');
   Route::resource('operation', 'OperationController', ['only' => ['index','store','destroy' ] ]);
-})
+});
