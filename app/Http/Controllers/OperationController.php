@@ -8,7 +8,7 @@ class OperationController extends Controller
 {
     public function index()
     {
-
+      return view('operation.index');
     }
 
     public function store(Request $request)
@@ -18,6 +18,6 @@ class OperationController extends Controller
 
     public function destroy($id)
     {
-      
+
     }
 }
