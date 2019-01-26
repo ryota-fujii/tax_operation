@@ -1,0 +1,60 @@
+button{
+  border-radius: 4px;
+  padding: 3px 30px;
+}
+
+h2 {
+  text-align: center;
+}
+
+input[type="text"]{
+  padding: 5px ;
+  font-size: 16px;
+  text-align: center;
+}
+
+table{
+  width: 60vw;
+  margin: 0 auto;
+  text-align: center;
+}
+
+table th{
+  padding: 3px 30px;
+}
+
+
+.contents{
+  height: 70vh;
+  width: 60vw;
+  margin: 0 auto;
+  background-color: gray;
+}
+
+.counted{
+  margin-left: 23.9vw;
+}
+
+.data{
+  width: 60vw;;
+}
+
+.date{
+  width: 22vw;
+}
+
+.rate{
+  width: 5vw;
+  margin-left: 5vw;
+}
+.regist{
+  margin-left: 9vw;
+}
+
+.result{
+  margin-top: 30px;
+}
+
+.start_count{
+  margin-left: 3vw;
+}
