@@ -9,6 +9,9 @@
           <th>開始日時</th><th>税率</th><th>操作</th>
         </tr>
         @foreach($lists as $list)
+        <form action="operation/{{$list->id}}/delete" method="post">
+          {{csrf_field()}}
+          <input type='hidden' name='id' value='{{ $list->id }}'>
             <tr>
               <td>{{$list->date}}</td>
               <td>{{$list->rate}}%</td>
@@ -16,6 +19,7 @@
                 <button type="submit" value="削除">削除</button>
               </td>
             </tr>
+        </form>
         @endforeach
       </table>
     </div>
