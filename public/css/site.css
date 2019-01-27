@@ -30,8 +30,12 @@ table th{
   margin: 0 auto;
 }
 
+.count{
+  margin-left: 6vw;
+}
+
 .counted{
-  margin-left: 23.9vw;
+  margin-left: 25.8vw;
 }
 
 .data{
@@ -39,15 +43,20 @@ table th{
 }
 
 .date{
-  width: 22vw;
+  width: 15vw;
+  margin-left: 3.5vw;
 }
 
 .rate{
   width: 5vw;
-  margin-left: 5vw;
+  margin-left: 10vw;
 }
 .regist{
   margin-left: 9vw;
+}
+
+.regist_button{
+  margin-left: 9.5vw;
 }
 
 .result{
@@ -55,5 +64,5 @@ table th{
 }
 
 .start_count{
-  margin-left: 3vw;
+  margin-left: 7vw;
 }

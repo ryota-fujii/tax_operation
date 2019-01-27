@@ -11,6 +11,8 @@
 |
 */
 
+use Illuminate\Database\Eloquest\Model;
+
 Route::get('/', function () {
     return view('welcome');
 
@@ -18,5 +20,6 @@ Route::get('/', function () {
 
 Route::group(['middleware' => ['web']], function() {
   Route::get('/', 'OperationController@index');
-  Route::resource('operation', 'OperationController', ['only' => ['index','store','destroy' ] ]);
+  Route::resource('operation', 'OperationController', ['only' => ['index','store'] ]);
+  Route::post('/operation/{id}/delete', 'OperationController@destroy');
 });

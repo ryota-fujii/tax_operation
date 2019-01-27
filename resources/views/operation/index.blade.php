@@ -8,17 +8,25 @@
         <tr>
           <th>開始日時</th><th>税率</th><th>操作</th>
         </tr>
-          <td>1997-04-01</td><td>8%</td><td><button>削除</button></td>
-        </tr>
-
+        @foreach($lists as $list)
+            <tr>
+              <td>{{$list->date}}</td>
+              <td>{{$list->rate}}%</td>
+              <td>
+                <button type="submit" value="削除">削除</button>
+              </td>
+            </tr>
+        @endforeach
       </table>
     </div>
     <div class="registrations">
       <h2>消費税設定の新規登録</h2>
       <div class="_data">
-        <input class="date" type="text" value="">
-        <input class="rate" type="text" value=""> %
-        <button class="regist" type="submit">登録</button>
+        {{Form::open(['url' => '/operation', 'method' => 'post'])}}
+          <input class="date" type="text" name="date">
+          <input class="rate" type="text" name="rate"> %
+          <button class="regist_button" value="SENT" type="submit">登録</button>
+        {{Form::close()}}
       </div>
     </div>
 
