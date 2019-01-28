@@ -47,7 +47,17 @@ table th{
   margin-left: 3.5vw;
 }
 
+.date_registed{
+  width: 15vw;
+  margin-left: 3.5vw;
+}
+
 .rate{
+  width: 5vw;
+  margin-left: 10vw;
+}
+
+.rate_registed{
   width: 5vw;
   margin-left: 10vw;
 }
