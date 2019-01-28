@@ -10,12 +10,7 @@ $(function(){
           last_registed = date_registed;
           tax = rate_registed;
         }
-      console.log(rate_registed);
-      console.log(date_registed);
     })
-
-    console.log(date);
-    console.log(tax);
     return tax;
   }
 
