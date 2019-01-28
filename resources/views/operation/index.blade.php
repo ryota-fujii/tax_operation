@@ -36,14 +36,14 @@
 
     <div class="count_tax">
       <h2>消費税計算</h2>
-      <div class="count_data">
-        <input class="date" type="text" value="">
-        <input class="count"type="text" value="">円
+      <form class="count_data">
+        <input class="count_date" type="text">
+        <input class="count"type="text">円
         <button class="start_count">計算</button>
       <div class="result">
         <input class="counted"type="text" value="">円 (税込)
       </div>
-      </div>
+    </form>
     </div>
 
   </div>
